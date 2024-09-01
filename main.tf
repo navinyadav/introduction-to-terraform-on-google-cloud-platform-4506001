@@ -1,3 +1,8 @@
+provider "google" {
+  project = "terraform-434118"
+  region  = "us-central1"
+  zone    = "us-central1-c"
+}
 data "google_compute_image" "ubuntu" {
   most_recent = true
   project     = "ubuntu-os-cloud" 
